@@ -4,61 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <section class="first">
-        <nav>
-            <ul>
-                <li><img src="logo.svg" alt="lgo"></li>
-            </ul>
-            <ul>
-                <li>home</li>
-                <li>about</li>
-                <li> contact</li>
-                <li>sign in</li>
-                <li>sign up</li>
+ <section class="first">
+    <div class="wrapper-nav">
+        <button class="nav-toggle" aria-label="open navigation">
+            <div class="hamburger">
+            <img src="hamburger.png" alt="">
+        </button>
+   
+
+        <div class="logo"><img src="logo.svg" alt="lgo"></div>
+
+         <nav class="nav">
+            <ul class="ul-nav">
+                <li class="nav-headings"><a href="#">home</a></li>
+                <li class="nav-headings"><a href="#">about</a></li>
+                <li class="nav-headings"><a href="#">contact</a></li>
+                <li class="nav-headings"><a href="#">sign in</a></li>
+                <li class="nav-headings"><button class="button" type="button"><a href="#">sign up</a></button></li>
             </ul>
         </nav>
-    </section>
-
+   </div>
+       
+    </section> 
 
     <section class="second">
         <div class="container">
             <div class="wrapper">
-                <h1>Responsive layouts don't have to be a struggle</h1>
+                <h1 class="heading-main">Responsive layouts <span>don't have to be a struggle</span></h1>
             </div>
             <div class="wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur
+                <p class="para para-main">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.</p>
-                <button type="button">i want to learn</button>
+                <button class="button button-main">i want to learn</button>
             </div>
         </div>
     </section>
 
 
     <section class="third">
-        <div class="container">
-            <div class="wrapper">
-                <h3>Mobile-first</h3>
-                <p>Lorem ipsum dolor sit amet,
+        <div class="container container-box-white">
+            <div class="wrapper box-white">
+                <h3 class="headings">Mobile-first</h3>
+                <p class="para">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut
                     enim ad minim veniam.</p>
             </div>
-            <div class="wrapper">
-                <h3>Efficient</h3>
-                <p>Lorem ipsum dolor sit amet,
+            <div class="wrapper box-white">
+                <h3 class="headings">Efficient</h3>
+                <p class="para">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut
                     enim ad minim veniam.</p>
             </div>
-            <div class="wrapper">
-                <h3>Done right</h3>
-                <p>Lorem ipsum dolor sit amet,
+            <div class="wrapper box-white">
+                <h3 class="headings">Done right</h3>
+                <p class="para">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut
@@ -71,39 +82,46 @@
     <section class="fourth">
         <div class="container">
 
-            <div class="wrapper">
-                <h3>It doesn’t have to be so hard</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <img src="the-image.jpg" alt="website sketches">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="wrapper wrapper-white">
+                <h3 class="headings headingbig">It doesn’t have to be so hard</h3>
+                <p class="para">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut
+                    enim ad minim veniam. Lorem
+                    ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod <img src="the-image.jpg" alt="website sketches"></p>
+               
+                <p class="para para-margin">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut
+                    enim ad minim veniam. Lorem
+                    ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad
+                    minim veniam.</p>
             </div>
 
-            <div class="wrapper">
+            <div class="wrapper wrapper-boxes">
                 <div class="box">
-                    <h3>Break it down</h3>
-                    <p>Lorem ipsum dolor sit amet,
+                    <h3 class="headings white-heading">Break it down</h3>
+                    <p class="para">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
                 </div>
                 <div class="box">
-                    <h3>Work your way up</h3>
-                    <p>Lorem ipsum dolor sit amet,
+                    <h3 class="headings white-heading">Work your way up</h3>
+                    <p class="para">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
                 </div>
                 <div class="box">
-                    <h3>Something</h3>
-                    <p>Lorem ipsum dolor sit amet,
+                    <h3 class="headings white-heading">Something</h3>
+                    <p class="para">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
@@ -116,47 +134,47 @@
 
     <section class="fifth">
         <div class="container">
-            <div class="wrapper">
-                <h2>just scratching the surface</h2>
+            <div class="wrapper wrapper-footer-heading">
+                <h2 class="headings footer-heading">just scratching the surface</h2>
             </div>
             <div class="wrapper">
-                <div class="colums">
+                <div class="columns">
                     <div class="column">
-                        <h4>About our company</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h4 class="footer-menu-headings">About our company</h4>
+                        <p class="para footer-menu-para footer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                     <div class="column">
-                        <h4>Getting around</h4>
+                        <h4 class="footer-menu-headings">Getting around</h4>
                         <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact</li>
+                            <li class="footer-menu-para"><a href="#">Home</a></li>
+                            <li class="footer-menu-para"><a href="#">About</a></li>
+                            <li class="footer-menu-para"><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <div class="column">
-                        <h4>Other things</h4>
+                        <h4 class="footer-menu-headings ">Other things</h4>
                         <ul>
-                            <li>Lorem ipsum</li>
-                            <li>Dolor</li>
-                            <li>sit amet</li>
-                            <li>consectetur</li>
+                            <li class="footer-menu-para"><a href="#">Lorem ipsum</a></li>
+                            <li class="footer-menu-para"><a href="#">Dolor</a></li>
+                            <li class="footer-menu-para"><a href="#">sit amet</a></li>
+                            <li class="footer-menu-para"><a href="#">consectetur</a></li>
                         </ul>
                     </div>
                     <div class="column">
-                        <h4>And more</h4>
+                        <h4 class="footer-menu-headings">And more</h4>
                         <ul>
-                            <li>Lorem ipsum</li>
-                            <li>dolor</li>
-                            <li>sit amet</li>
-                            <li>consectetur</li>
+                            <li class="footer-menu-para"><a href="#">Lorem ipsum</a></li>
+                            <li class="footer-menu-para"><a href="#">dolor</a></li>
+                            <li class="footer-menu-para"><a href="#">sit amet</a></li>
+                            <li class="footer-menu-para"><a href="#">consectetur</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="menu.js"></script>
 
 
 </body>
