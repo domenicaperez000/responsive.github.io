@@ -66,7 +66,7 @@ body {
 }
 .wrapper-nav {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 ul li {
@@ -108,8 +108,9 @@ li a {
 }
 
 .logo {
-    width: min-content;
-    margin: 1.4rem 0;
+    width: 85%;
+    margin: 1.2rem 0;
+    
 }
 ul {
     display: flex;
@@ -221,6 +222,9 @@ span {
     width: 75%;
     margin: 0 auto;
 }
+.container-box-white {
+    padding: 3rem 0;
+}
 
 
 
@@ -301,13 +305,12 @@ span {
     width: 90%;
     margin: auto;
 }
-.column {
-    margin: 2rem 0;
-}
+
 
 @media (min-width: 700px) {
     .ul-nav {
         flex-direction: row;
+        margin: 0 2rem;
     }
     .wrapper-nav {
         width: 100%;
@@ -319,11 +322,133 @@ span {
         width: max-content;
        position: relative;
     }
-    .logo {
-        
-    }
-    .container-box-white {
+   
+    .wrapper-boxes {
         display: flex;
+        flex-direction: row;
+    }
+    .logo {
+        width: min-content;
+        margin-left: 2rem;
+       }
+   
+}
+@media (min-width: 1000px) {
+
+
+
+    .container-hero {
+        display: flex;
+        margin: 3rem 0;
+        
         
     }
+    .wrapper-header-main {
+        width: 40%;
+        margin-left: auto;
+        
+        
+    }
+    .heading-main, 
+    .para-main {
+        text-align: left;
+    }
+    .para-main {
+        width: 100%;
+        line-height: 2.2rem;
+        font-size: 24px;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    .heading-main {
+        width: 100%;
+        font-size: 90px;
+        margin: 0;
+    }
+    .wrapper-para-main {
+        width: 36%;
+        margin-right: auto;
+        align-self:flex-end;
+        
+    }
+    .button-main {
+        width: max-content;
+        margin: 0;
+        
+        padding: 0.6 2.6rem;
+    }
+
+
+    .para-fourth {
+        margin: 2.5rem 0;
+    }
+    .box {
+        margin: 0 0.5rem;
+    }
+    .columns {
+        display: flex;
+        flex-direction: row;
+       
+        
+    }
+    .column {
+        margin: 0 2rem;
+    }
+
+   .column ul {
+    margin: 0;
+
+   }
+
+   .column-para {
+    width: 40%;
+   }
+   .column-skinny, 
+   .para-list {
+    
+    align-items: flex-start;
+    text-align: left;
+   }
+   .column-skinny {
+    width: 30%;
+   }
+   .para-list {
+    width: 100%;
+   }
+
+   .footer-para {
+    width: 95%;
+   }
+
+   .container-box-white {
+    display: flex;
+    flex-direction: row;
+   }
+   .box-white {
+    max-width: 20%;
+   }
+   .container-white {
+    display: flex;
+    flex-direction: row;
+    padding: 0 auto;
+   }
+   .wrapper-boxes {
+    flex-direction: column;
+    width: 30%;
+    margin-right: auto;
+    margin-top: 2.6rem;
+    
+   }
+   .wrapper-white {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 6rem;
+   }
+   .box {
+    margin: 0.5rem 0;
+   }
+   .footer-heading {
+    font-size: 24px;
+   }
 }
